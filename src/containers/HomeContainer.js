@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from '../components/Input'
 
 class HomeContainer extends React.Component {
    
@@ -7,7 +8,7 @@ class HomeContainer extends React.Component {
       return (     
           <div className>
             
-            this is home
+            <Input/>
           </div>
         )
     }

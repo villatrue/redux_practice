@@ -4,9 +4,10 @@ import { combineReducers } from 'redux';
 const counterReducer = (state = 0, action) => {
     switch(action.type){
         case 'INCREMENT':
-            return state + 1
+            console.log(`%c "${action.payload}" added to counter`, `color: #bada55`);
+            return state + action.payload;
         case 'DECREMENT':
-            return state - 1
+            return state - action.payload;
         default:
             return state;
     }

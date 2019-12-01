@@ -53,7 +53,9 @@ const useStyles = makeStyles(theme => ({
       
      const sayHi= ()=>{
          console.log("say hi")
-      }
+         setShow(0)
+      } 
+      //I want this to add a new row of input create a state in pprops onto a new container called input
   
       return (
           <Paper className={classes.root}>
@@ -103,6 +105,7 @@ const useStyles = makeStyles(theme => ({
                   <Button onClick={()=>{sayHi()}} variant="contained" color="primary" className={classes.button}>
                       Say Hi
                   </Button>
+                  
                   : null
                   } 
               </form>

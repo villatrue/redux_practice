@@ -2,6 +2,8 @@ import React from 'react';
 import {useSelector, useDispatch} from 'react-redux'
 import {increment, decrement} from './redux/actions'
 import HomeContainer from './containers/HomeContainer'
+import { Input } from '@material-ui/core';
+import InputContainer from './containers/InputContainer';
 
 function App() {
   const counter = useSelector(state => state.counter)
@@ -10,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <InputContainer/>
       <HomeContainer/>
       <h1>Counter{counter}</h1>
       <button onClick={()=>dispatch(increment(5))}>+</button>

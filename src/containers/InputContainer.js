@@ -2,13 +2,13 @@ import React from 'react'
 
 import Input from '../components/Input'
 import Button from '@material-ui/core/Button';
-import Info from '../components/Info'
-import RouteNameInput from '../components/RouteNameInput';
+// import Info from '../components/Info'
+// import RouteNameInput from '../components/RouteNameInput';
 
 
 
 
-class SearchContainer extends React.Component {
+class InputContainer extends React.Component {
     constructor(props){
         super(props)
         this.state={
@@ -92,8 +92,8 @@ class SearchContainer extends React.Component {
         return(
             <div>
                 {/* <div> */}
-                <Info/>
-                <RouteNameInput routeNameHandle={this.routeNameHandle}/>
+                
+                
                 {/* </div> */}
                 {this.state.renderCount.map((input)=>{
                     return <Input addToAddressList={this.addToAddressList}/>
